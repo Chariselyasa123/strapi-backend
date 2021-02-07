@@ -14,15 +14,16 @@ module.exports = ({ env }) => {
             port: config.port,
             database: config.database,
             username: config.user,
-            passord: config.password,
+            password: config.password,
           },
-          option: {
+          options: {
             ssl: false,
           },
         },
       },
     };
   }
+
   return {
     defaultConnection: "default",
     connections: {
